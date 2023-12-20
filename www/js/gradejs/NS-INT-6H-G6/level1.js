@@ -600,7 +600,7 @@ Game.NS_INT_6H_G6level1.prototype =
         _this.selectedQues = Math.floor(Math.random() * 2);
         if (_this.selectedQues == 0) {
             // smaller integer
-            _this.time.events.add(1100, () => {
+            _this.time.events.add(1000, () => {
                 _this.askQn2();
             });
             _this.qn_flag = 2;
@@ -1218,7 +1218,7 @@ Game.NS_INT_6H_G6level1.prototype =
 
         _this.demoVo1src.setAttribute("src", window.baseUrl + "questionSounds/NS-INT-6H-G6/" + _this.languageSelected + "/NS-INT-6-G6 demo 1_2.mp3");
         _this.demoVo1.appendChild(_this.demoVo1src);
-        _this.demoVo1.play();
+        _this.demoVo1.play();//NS-INT-6-G6 demo 1_2
     },
     askQn1: function () {
 
