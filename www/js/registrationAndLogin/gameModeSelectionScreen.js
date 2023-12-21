@@ -36,7 +36,6 @@ Game.gameModeSelectionScreen.prototype = {
 		splash.anchor.setTo(0.5);
 
 
-
 		var titleBar = _this.add.graphics(0, 0);
 		titleBar.anchor.setTo(0.5);
 		titleBar.lineStyle(2, 0x000000, 0.8);
