@@ -35,195 +35,17 @@ Game.index2.prototype = {
 
 	},
 
-
 	preload: function (game) {
 		//game.cache.destroy();	
 		game.load.image('exitBg', 'assets/exitAssets/exitBg.png');
 		game.load.image('confirmBg', 'assets/exitAssets/confirmBg.png');
 	},
 
-
-
 	create: function (game) {
 		console.log("I am in index2");
 		window.currScreen = "gameModeSelectionScreen";
 
 		this.gamesVar = game;
-
-		// if(localStorage.getItem("FirstTimeRate")==null)
-		// 	localStorage.setItem("FirstTimeRate", "false");
-
-		// if(localStorage.getItem(window.avatarName+"numbersensePlayed")==null)
-		// 	localStorage.setItem(window.avatarName+"numbersensePlayed", "notplayed");
-
-		// if(localStorage.getItem(window.avatarName+"measurementPlayed")==null)
-		// 	localStorage.setItem(window.avatarName+"measurementPlayed", "notplayed");
-
-		// if(localStorage.getItem(window.avatarName+"numberoperationPlayed")==null)
-		// 	localStorage.setItem(window.avatarName+"numberoperationPlayed", "notplayed");
-
-		// if(localStorage.getItem(window.avatarName+"length_MLG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"length_MLG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"length_MLG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"length_MLG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"length_MLG_3_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"length_MLG_3_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"volume_MVG_1_4state")==null)
-		// 	localStorage.setItem(window.avatarName+"volume_MVG_1_4state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"volume_MVG_2_4state")==null)
-		// 	localStorage.setItem(window.avatarName+"volume_MVG_2_4state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"volume_MVG_3_4state")==null)
-		// 	localStorage.setItem(window.avatarName+"volume_MVG_3_4state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"weight_MWG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"weight_MWG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"weight_MWG_2_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"weight_MWG_2_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"weight_MWG_3_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"weight_MWG_3_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"time_MTG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"time_MTG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"time_MTG_2_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"time_MTG_2_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"time_MTG_3_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"time_MTG_3_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"number_NSNG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"number_NSNG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"number_NSNG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"number_NSNG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"sequence_NSSG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"sequence_NSSG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"sequence_NSSG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"sequence_NSSG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"sequence_NSSG_3_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"sequence_NSSG_3_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"sequence_NSSG_4_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"sequence_NSSG_4_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"sequence_NSSG_5_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"sequence_NSSG_5_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"sequence_NSSG_6_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"sequence_NSSG_6_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"comparison_NSCG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"comparison_NSCG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"comparison_NSCG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"comparison_NSCG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"comparison_NSCG_4_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"comparison_NSCG_4_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"comparison_NSCG_5_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"comparison_NSCG_5_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"fraction_NSFG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"fraction_NSFG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"fraction_NSFG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"fraction_NSFG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"fraction_NSFG_3_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"fraction_NSFG_3_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"fraction_NSFG_4_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"fraction_NSFG_4_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"placevalue_NSPVG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"placevalue_NSPVG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"placevalue_NSPVG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"placevalue_NSPVG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"placevalue_NSPVG_4_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"placevalue_NSPVG_4_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"placevalue_NSPVG_6_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"placevalue_NSPVG_6_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"placevalue_NSPVG_5_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"placevalue_NSPVG_5_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"placevalue_NSPVG_7_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"placevalue_NSPVG_7_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"addition_NOAG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"addition_NOAG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"addition_NOAG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"addition_NOAG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"addition_NOAG_3_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"addition_NOAG_3_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"addition_NOAG_4_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"addition_NOAG_4_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"subtraction_NOSG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"subtraction_NOSG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"subtraction_NOSG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"subtraction_NOSG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"subtraction_NOSG_3_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"subtraction_NOSG_3_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"subtraction_NOSG_4_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"subtraction_NOSG_4_3state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"division_NODG_1_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"division_NODG_1_2state", "canplay");  
-
-		// if(localStorage.getItem(window.avatarName+"division_NODG_2_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"division_NODG_2_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"division_NODG_3_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"division_NODG_3_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"division_NODG_4_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"division_NODG_4_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"multiplication_NOMG_1_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"multiplication_NOMG_1_1state", "canplay");
-
-		// if(localStorage.getItem(window.avatarName+"multiplication_NOMG_2_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"multiplication_NOMG_2_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"multiplication_NOMG_3_1state")==null)
-		// 	localStorage.setItem(window.avatarName+"multiplication_NOMG_3_1state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"multiplication_NOMG_4_2state")==null)
-		// 	localStorage.setItem(window.avatarName+"multiplication_NOMG_4_2state", "cannotplay");
-
-		// if(localStorage.getItem(window.avatarName+"multiplication_NOMG_5_3state")==null)
-		// 	localStorage.setItem(window.avatarName+"multiplication_NOMG_5_3state", "cannotplay");
-
-		//window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
-		// remove an item
-		//alert(window.score);
-		//if(window.score==null||window.score==undefined||window.score==""||window.score==NaN)
-		//{
-		//localStorage.setItem(window.avatarName+"Score", 50);
-		//window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
-		//}
-		//alert(window.score);
 
 		abbchmprmdsjsapi.initializeDS();
 
@@ -250,8 +72,6 @@ Game.index2.prototype = {
 
 		document.addEventListener('backbutton', function (e) {
 
-			//if((window.prevScreen == "gameScreen") || window.currScreen == "gameModeSelectionScreen")
-			//{
 			e.preventDefault();
 
 			if (game && !exitOnce) {
@@ -266,7 +86,6 @@ Game.index2.prototype = {
 				stageBg.drawRect(0, 0, 960, 540);
 				stageBg.boundsPadding = 0;
 				stageBg.alpha = 0.2;
-
 
 				var exitBg = game.add.sprite(game.world.centerX, game.world.centerY, 'exitBg');
 				exitBg.anchor.setTo(0.5);
@@ -359,13 +178,7 @@ Game.index2.prototype = {
 					commonNavBar.backbtn = null;
 					commonNavBar.mcIcon = null;
 					commonNavBar.speakerbtn = null;
-
-					//if(window.currScreen == "practiceModegradeSelectionScreen")
-					//{
 					navigator.app.exitApp();
-					//}else{
-					//game.state.start('practiceModegradeSelectionScreen',true,false);
-					//}
 
 				}, game);
 
@@ -376,15 +189,7 @@ Game.index2.prototype = {
 					exitGrp.destroy();
 					exitOnce = false;
 				}, game);
-
-				//game.add.stage(exitGrp);
-
 			}
-			//}
-			/*else if(window.prevScreen == "gameModeSelectionScreen"&& window.currScreen == "gameModeSelectionScreen")
-			{
-				nativeApp.onButtonShowPopupWindowClick();
-			}*/
 
 		}, false);
 		console.log(window.languageSelected,"window.languageSelected");
