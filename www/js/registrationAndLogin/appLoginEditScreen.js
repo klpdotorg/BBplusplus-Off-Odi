@@ -47,8 +47,8 @@ Game.appLoginEditScreen.prototype = {
 		_this.basePath = cordova.file.externalRootDirectory + "Android/data/com.akshara.BBplusplusOffOdi/Files/Download/.gameFilesBB++V10_2/www/";
 
 		//* nEED to change this ****
-		_this.fullSize = 315575991;//,302978124
-		//BBplusplusOffOdi - 127,903,659 + 18,76,72,332
+		_this.fullSize = 315585177;//,302978124
+		//BBplusplusOffOdi - 27,903,659 + 18,76,72,332,  //95,186,236
 		//127,903,659 odiya
 		// /103,175,062 tamil
 	
