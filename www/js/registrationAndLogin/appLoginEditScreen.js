@@ -47,12 +47,12 @@ Game.appLoginEditScreen.prototype = {
 		_this.basePath = cordova.file.externalRootDirectory + "Android/data/com.akshara.BBplusplusOffOdi/Files/Download/.gameFilesBB++V10_2/www/";
 
 		//* nEED to change this ****
-		_this.fullSize = 315585177;//,302978124
-		//BBplusplusOffOdi - 27,903,659 + 18,76,72,332,  //95,186,236
+		_this.fullSize = 315613015;//,302978124
+		//BBplusplusOffOdi - 27,903,659 + 18,76,72,332,  //95,186,236//87798759
 		//127,903,659 odiya
 		// /103,175,062 tamil
 	
-		_this.zipFiles = [["Assets1.zip", 981561], ["Assets2.zip", 87770921], ["Assets4.zip", 95177050], ["OdiyaquestionSounds.zip", 127,903,659], ["sounds.zip", 3742800]];// old = 3683747
+		_this.zipFiles = [["Assets1.zip", 981561], ["Assets2.zip", 87798759], ["Assets4.zip", 95177050], ["OdiyaquestionSounds.zip", 127,903,659], ["sounds.zip", 3742800]];// old = 3683747
 		//["HindiquestionSounds.zip", 29272691],["KannadaquestionSounds.zip", 29272691], ["OdiyaquestionSounds.zip", 48682701], ["MarathiquestionSounds.zip", 39766797], ["TamilquestionSounds.zip", 30783494],
 
 		_this.counter = 0;
